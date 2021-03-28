@@ -90,7 +90,7 @@ section {
 }
 
 #primary-screen {
-    background: url("/images/banner-site.png");
+    background: url("/imgs/banner-site.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -129,4 +129,17 @@ section {
 
 #primary-screen a:hover{
     background-color: #10071d;
+}
+
+#secondary-screen {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#secondary-screen img {
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
 }
