@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>dev.blog</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/index.js"></script>
+    <title>Contact</title>
 </head>
 
 <body>
-
     <header>
         <h1>dev.blog</h1>
         <div class="dropdown">
@@ -25,30 +25,25 @@
                 </g>
             </svg>
             <div class="dropdown-content">
-                <a href="index.html">Inicio</a>
+                <a href="../index.html">Inicio</a>
                 <a href="#">Publi</a>
-                <a href="views/contact.html">Contato</a>
+                <a href="contact.html">Contato</a>
             </div>
         </div>
     </header>
+
     <main>
-        <section id="primary-screen">
-            <h1>Front-End</h1>
-            <p>Dicas de ferramentas e como ser um desenvolvedor melhor</p>
-            <a href="#">Publi</a>
-        </section>
-        <section id="secondary-screen">
-            <img src="/imgs/astrounaut.png" alt="Astronauta">
-            <div class="publication">
-                <h1>O que é ser front-end</h1>
-                <p>O desenvolvedor front-end é responsável pela experiência do usuário dentro de uma aplicação web, é
-                    ele quem vai desenhar e desenvolver as páginas com as quais, posteriormente, o usuário irá
-                    interagir.
-                    O que é ser front-end
-                </p>
-            </div>
+        <section id="contact">
+            <form onsubmit="enviarEmail(event)">
+                <h1>Contato</h1>
+                <input type="text" name="name" id="name" placeholder="Nome" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                <button>Enviar</button>
+            </form>
         </section>
     </main>
+
     <footer>
         <div class="info">
             <div class="personal-info">
@@ -87,5 +82,4 @@
         </div>
     </footer>
 </body>
-
 </html>
