@@ -104,7 +104,7 @@ section {
 }
 
 #primary-screen {
-    background: url("imgs/banner-site.png");
+    background: url("../imgs/banner-site.png");
     background-size: cover;
     background-position: center;
     display: flex;
